@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(157, 157, 157);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: red;
+
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: azure;
+}
+
+
+.box {
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    border-radius: 25px;
+}
+
+.cart-count {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+    z-index: 99;
+}
+
+#cart-icon {
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+
+}
+
+.container {
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+
+h2.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+.add-cart {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.food-box {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgb(32, 31, 31);
+}
+
+.pic {
+    overflow: hidden;
+}
+
+.pic:hover img {
+    transform: scale(1.5);
+}
+
+.food-img {
+    transition: 0.3s;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.fdname {
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(8, 252, 175);
+    color:white ;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.add-cart:hover{
+    background-color: rgb(240, 61, 61);
+}
+
+.cart{
+    position: fixed;
+    top:0;
+    right: -100%;
+    width:300px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    z-index: 100;
+     
+}
+
+.cart-active{
+    right:0;
+    transform: 0.5s;
+}
+
+.cart-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 19px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+.cart-img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border:2px solid  rgba(0,0,0,0.1);
+    padding:5px;
+}
+.details{
+    display: grid;
+    gap: 18px ;
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between;
+}
+ .cart-food-title{
+    font-size: 18px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+
+ .cart-price{
+    font-weight: bolder;
+ }
+
+ .cart-quantity{
+    font-size: 16px;
+    text-align: center;
+    border:1px solid black;
+    outline: none;
+    width:100px;
+ }
+
+ .cart-remove{
+        font-size: 1rem;
+        color: red;
+        font-weight: 600;
+        cursor: pointer;
+ }
+
+ .total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+ }
+
+ .total-title{
+    font-size: 16px;
+    font-weight: 400;
+
+ }
+
+ .total-price{
+        margin-left: 10px;
+ }
+
+ .btn-buy{
+
+    padding: 12px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+
+ }
+
+ #cart-close{
+
+    position: absolute;
+    top:10px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 30px;
+
+ }
